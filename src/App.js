@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+//leggendo la traccia quello esatto dovrebbe essere stampaH2, nel dubbio cerco di prendere la mano
 import './App.css';
+const sum = (a, b) => a + b;
+function stampaH2(a, b){
+  return <h2>{a + b }</h2>
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h2>{sum('ciao', ' a chi legge')}</h2>
+    {stampaH2(2, 4)}
+    </>
+
   );
 }
 
